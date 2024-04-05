@@ -1,0 +1,132 @@
+body{
+    margin:  0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+    /* background-color: black; */
+}
+.container{
+    max-width: 500px;
+    padding: 10px;
+}
+.container img{
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+    
+btn{
+    background-color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: darksalmon;
+}
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.7s;
+
+}
+.active.trailer{
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+@media (max-width:991px){
+    .trailer video {
+        max-width: 90%;
+    }
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(244, 244, 215);
+    cursor: pointer;
+     
+}
+.h5text{
+    position: absolute;
+    top: -50px;
+    right: 40px;
+    font-size: 30px;
+    color: rgb(244, 244, 215);
+    
+}
+.pText{
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 15px;
+    color: rgb(244, 244, 215);
+}
+.shareIcon{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    
+    color: rgb(244, 244, 215);
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .movie-card {
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  .movie-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .movie-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .add-to-watchlist-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .watchlist {
+    margin-top: 20px;
+  }
+  #watchlist {
+    list-style-type: none;
+    padding: 0;
+  }
+  .watchlist-item {
+    margin-bottom: 10px;
+  }
